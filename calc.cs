@@ -23,40 +23,11 @@ namespace LLLLLL
 
         void init()
         {
-            det = new();
-            det_c = new();
+            det = un.GetDet();
+            det_c = un.GetDetPrice();
 
-            det.Add("Капот".ToLower());
-            det.Add("Передняя дверь".ToLower());
-            det.Add("Задняя дверь".ToLower());
-            det.Add("Передний бампер".ToLower());
-            det.Add("Задний бампер".ToLower());
-            det.Add("Крыша".ToLower());
-
-            det_c.Add(1);
-            det_c.Add(1.2);
-            det_c.Add(1.1);
-            det_c.Add(1);
-            det_c.Add(1);
-            det_c.Add(1.1);
-
-            colors = new();
-            colors_c = new();
-
-            colors.Add("Белый".ToLower());
-            colors.Add("Синий".ToLower());
-            colors.Add("Желтый".ToLower());
-            colors.Add("Красный".ToLower());
-            colors.Add("Перламутровый".ToLower());
-            colors.Add("Серый металлик".ToLower());
-
-
-            colors_c.Add(1);
-            colors_c.Add(1);
-            colors_c.Add(1.1);
-            colors_c.Add(1);
-            colors_c.Add(1.2);
-            colors_c.Add(1.3);
+            colors = un.GetColors();
+            colors_c = un.GetColorsPrice();
         }
 
         public double Calc(List<Tuple<string, string>> det_and_color)

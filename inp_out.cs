@@ -22,21 +22,9 @@ namespace LLLLLL
 
         void init()
         {
-            det = new();
-            det.Add("Капот".ToLower());
-            det.Add("Передняя дверь".ToLower());
-            det.Add("Задняя дверь".ToLower());
-            det.Add("Передний бампер".ToLower());
-            det.Add("Задний бампер".ToLower());
-            det.Add("Крыша".ToLower());
+            det = un.GetDet();
 
-            colors = new();
-            colors.Add("Белый".ToLower());
-            colors.Add("Синий".ToLower());
-            colors.Add("Желтый".ToLower());
-            colors.Add("Красный".ToLower());
-            colors.Add("Перламутровый".ToLower());
-            colors.Add("Серый металлик".ToLower());
+            colors = un.GetColors();
         }
 
         public List<Tuple<string, string>> input_d()
