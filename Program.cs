@@ -10,11 +10,8 @@
             List<Tuple<string, string>> data = inp.input_d();
 
             Console.WriteLine("Производится расчёт");
-            List<Tuple<string, string>> t = new();
 
-            t.Add(new("капот", "синий"));
-
-            double s = c.Calc(t);
+            double s = c.Calc(data);
 
             Console.WriteLine(s);
         }
